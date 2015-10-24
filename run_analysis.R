@@ -64,7 +64,7 @@ train_test <- train_test[, mean_std]
 # convert the activity column from integer to factor
 train_test$activityID <- factor(train_test$activityID, labels=c("Walking", "Walking Upstairs", "Walking Downstairs", "Sitting", "Standing", "Laying"))
 
-## STEP 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+## 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # creating tidy data set
 melted <- melt(train_test, id=c("subjectID","activityID"))
